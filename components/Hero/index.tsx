@@ -93,7 +93,7 @@ export default function Hero() {
                     </li>
                     <li className="opacity-0">
                         <Link
-                            href="https://raw.githubusercontent.com/izharxyz/resume/refs/heads/main/resume-izhar.pdf"
+                            href="https://raw.githubusercontent.com/izhrs/resume/refs/heads/main/resume-izhar.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-outline"

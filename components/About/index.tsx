@@ -54,7 +54,7 @@ export default function About() {
 
                 <div className="mt-10 flex gap-5 lg:gap-10 items-center justify-center lg:justify-start w-full h-fit text-muted-foreground">
                     <Link
-                        href="https://raw.githubusercontent.com/izharxyz/resume/refs/heads/main/resume-izhar.pdf"
+                        href="https://raw.githubusercontent.com/izhrs/resume/refs/heads/main/resume-izhar.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-outline border-muted-foreground text-muted-foreground hover:border-primary hover:text-primary transition duration-300"
@@ -64,7 +64,7 @@ export default function About() {
                     </Link>
 
                     <Link
-                        href="https://github.com/izharxyz"
+                        href="https://github.com/izhrs"
                         className="hover:text-primary hover:scale-110 duration-300"
                         target="_blank"
                         rel="noopener noreferrer"

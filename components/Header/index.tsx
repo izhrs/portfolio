@@ -77,7 +77,7 @@ export default function Header() {
                             </Link>
                         ))}
                         <Link
-                            href="https://github.com/izharxyz"
+                            href="https://github.com/izhrs"
                             className="hover:text-accent transition duration-300"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -145,7 +145,7 @@ export default function Header() {
                         </Link>
                     ))}
                     <Link
-                        href="https://github.com/izharxyz"
+                        href="https://github.com/izhrs"
                         className="hover:text-primary text-xl font-light transition duration-300 uppercase"
                         onClick={() => setIsMenuOpen(false)}
                         target="_blank"

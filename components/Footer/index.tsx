@@ -50,7 +50,7 @@ export default function Footer() {
                         Blog
                     </Link>
                     <Link
-                        href="https://github.com/izharxyz/portfolio"
+                        href="https://github.com/izhrs/portfolio"
                         className="hover:text-primary duration-300"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -61,7 +61,7 @@ export default function Footer() {
                 <HorizontalLine />
                 <div className="flex items-center justify-center gap-5 text-muted-foreground">
                     <Link
-                        href="https://github.com/izharxyz"
+                        href="https://github.com/izhrs"
                         className="hover:text-primary hover:scale-110 duration-300"
                         target="_blank"
                         rel="noopener noreferrer"
