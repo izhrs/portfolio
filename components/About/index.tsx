@@ -35,21 +35,14 @@ export default function About() {
                 </div>
 
                 <p className="text-muted-foreground text-lg mt-10">
-                    Hello! I&apos;m Mohamed Izhar, a passionate web developer
-                    and enthusiast from India. I&apos;m currently pursuing my
-                    Bachelor&apos;s degree in Computer Science and Engineering
-                    at Ajeenkya DY Patil University, with graduation expected in
-                    2025. My technical skills include Django, Svelte, Next.js,
-                    and TailwindCSS, and I thrive on creating seamless, engaging
-                    digital experiences with a high level of craftsmanship.{" "}
-                    <br /> <br />
-                    Outside of tech, I&apos;m a big animal lover and have three
-                    wonderful cats. I&apos;m passionate about coding, computer
-                    science, and continuous learning, and I&apos;m actively
-                    seeking job opportunities where I can bring my skills and
-                    passion to a collaborative team. If you&apos;re looking for
-                    a developer committed to excellence and innovation, feel
-                    free to connect with me!
+                    Hello! I&apos;m Mohamed Izhar, a passionate web developer and tech enthusiast
+                    from India. I thrive on crafting seamless, engaging digital experiences and take
+                    pride in writing clean, thoughtful code. <br /> <br />
+                    Outside of tech, I&apos;m a big animal lover and have three wonderful cats.
+                    I&apos;m always exploring new ideas, learning continuously, and looking for
+                    opportunities where I can contribute meaningfully to ambitious projects. If
+                    you&apos;re looking for someone who cares deeply about quality and creativity,
+                    let&apos;s connect!
                 </p>
 
                 <div className="mt-10 flex gap-5 lg:gap-10 items-center justify-center lg:justify-start w-full h-fit text-muted-foreground">
