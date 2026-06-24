@@ -4,12 +4,12 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { TextHoverEffect } from "@/components/ui/TextHoverEffect";
 
 const techStack = [
-    { name: "Next.js", color: "text-primary" },
-    { name: "Django", color: "text-green-600" },
-    { name: "Tailwind", color: "text-cyan-400" },
-    { name: "Svelte", color: "text-orange-500" },
-    { name: "React Native", color: "text-blue-400" },
-    { name: "Rust", color: "text-orange-600" },
+    { name: "Rust", color: "text-chart-1" }, // red
+    { name: "Next.js", color: "text-primary" }, // primary
+    { name: "Django", color: "text-chart-2" }, // green
+    { name: "Tailwind", color: "text-chart-3" }, // sky
+    { name: "Svelte", color: "text-chart-4" }, // maroon
+    { name: "React Native", color: "text-chart-5" }, // blue
 ];
 
 export default function TechStackParallax() {
@@ -26,7 +26,7 @@ export default function TechStackParallax() {
     const transformXReverse = useTransform(
         springScrollY,
         [0, 1], // Maps scroll progress to the given range
-        [300, -300] // Alternate directions
+        [300, -300], // Alternate directions
     );
 
     return (

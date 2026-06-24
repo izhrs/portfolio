@@ -76,11 +76,11 @@
     --input: 225 14% 77%;
     --ring: 231 97% 72%; /* lavender */
 
-    --chart-1: 231 97% 72%; /* lavender */
-    --chart-2: 134 44% 48%; /* green */
-    --chart-3: 189 70% 42%; /* sapphire */
-    --chart-4: 35 77% 49%; /* yellow */
-    --chart-5: 343 81% 75%; /* red */
+    --chart-1: 347 87% 44%; /* red */
+    --chart-2: 109 58% 40%; /* green */
+    --chart-3: 197 97% 46%; /* sky */
+    --chart-4: 355 76% 59%; /* maroon */
+    --chart-5: 220 91% 54%; /* blue */
 
     --radius: 0.5rem;
 }
@@ -114,13 +114,13 @@
     /* surface1 */
     --border: 234 13% 31%;
     --input: 234 13% 31%;
-    --ring: 240 4.9% 83.9%;
+    --ring: 232 97% 85%;
 
-    --chart-1: 217 92% 76%; /* Blue */
-    --chart-2: 115 54% 76%; /* Green */
-    --chart-3: 41 86% 83%; /* Yellow */
-    --chart-4: 199 76% 69%; /* Sapphire */
-    --chart-5: 343 81% 75%; /* Red */
+    --chart-1: 343 81% 75%; /* red */
+    --chart-2: 115 54% 76%; /* green */
+    --chart-3: 199 76% 69%; /* sapphire */
+    --chart-4: 350 65% 77%; /* maroon */
+    --chart-5: 217 92% 76%; /* blue */
 }
 
 @layer base {

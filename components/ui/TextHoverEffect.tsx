@@ -54,11 +54,14 @@ export const TextHoverEffect = ({
                 >
                     {hovered && (
                         <>
-                            <stop offset="0%" stopColor="var(--accent)" />
-                            <stop offset="25%" stopColor="var(--accent)" />
-                            <stop offset="50%" stopColor="var(--blue-500)" />
-                            <stop offset="75%" stopColor="var(--red-500)" />
-                            <stop offset="100%" stopColor="var(--red-500)" />
+                            <stop offset="0%" stopColor="var(--indigo-400)" />
+                            <stop offset="25%" stopColor="var(--indigo-400)" />
+                            <stop offset="50%" stopColor="var(--red-400)" />
+                            <stop offset="75%" stopColor="var(--sky-400)" />
+                            <stop
+                                offset="100%"
+                                stopColor="var(--destructive)"
+                            />
                         </>
                     )}
                 </linearGradient>
@@ -94,7 +97,7 @@ export const TextHoverEffect = ({
                 textAnchor="middle"
                 dominantBaseline="middle"
                 strokeWidth="0.9"
-                className="font-[helvetica] font-bold stroke-zinc-200 dark:stroke-zinc-800 fill-transparent text-5xl"
+                className="font-[helvetica] font-bold stroke-muted fill-transparent text-5xl"
                 style={{ opacity: hovered ? 0.8 : 0 }}
             >
                 {text}
@@ -107,7 +110,7 @@ export const TextHoverEffect = ({
                 textAnchor="middle"
                 dominantBaseline="middle"
                 strokeWidth="0.9"
-                className="font-[helvetica] font-bold fill-transparent text-5xl stroke-zinc-200 dark:stroke-zinc-800"
+                className="font-[helvetica] font-bold fill-transparent text-5xl stroke-muted"
                 initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
                 animate={{
                     strokeDashoffset: 0,

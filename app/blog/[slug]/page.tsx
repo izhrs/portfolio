@@ -16,7 +16,7 @@ export async function generateMetadata({
 
     const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/blog/posts/${slug}/`,
-        { cache: "force-cache" }
+        { cache: "force-cache" },
     );
 
     const post: PostDetail = await response.json();
@@ -56,7 +56,7 @@ export default async function BlogPost({
     const slug = (await params).slug;
     const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/blog/posts/${slug}/`,
-        { cache: "force-cache" }
+        { cache: "force-cache" },
     );
 
     const post: PostDetail = await response.json();
@@ -83,7 +83,7 @@ export default async function BlogPost({
                                         day: "2-digit",
                                         month: "short",
                                         year: "numeric",
-                                    }
+                                    },
                                 )}
                             </span>
                         </div>
@@ -94,7 +94,7 @@ export default async function BlogPost({
                             {post.categories?.map((category) => (
                                 <span
                                     key={category.id}
-                                    className="text-xs text-nowrap md:text-sm uppercase text-purple-800 dark:text-purple-400 border border-purple-800 dark:border-purple-400 py-1 px-3 rounded-full bg-accent/10 backdrop-blur-xl"
+                                    className="text-xs text-nowrap md:text-sm uppercase text-accent border border-accent py-1 px-3 rounded-full bg-background/40 backdrop-blur-xl"
                                 >
                                     {category.name}
                                 </span>
