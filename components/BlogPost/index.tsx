@@ -38,7 +38,7 @@ export default async function BlogPosts() {
                 thoughts, and ideas.{" "}
                 <Link
                     href="/blog"
-                    className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-pink-500 group"
+                    className="text-transparent bg-clip-text bg-linear-to-r from-accent to-pink-500 group"
                 >
                     Explore all posts
                     <FaArrowRightLong className="inline-block ml-2 h-4 w-4 text-pink-500 group-hover:translate-x-2 transition duration-300" />

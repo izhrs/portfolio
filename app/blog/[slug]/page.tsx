@@ -62,17 +62,17 @@ export default async function BlogPost({
     const post: PostDetail = await response.json();
 
     return (
-        <div className="min-h-[100svh] w-screen overflow-x-hidden mb-16 md:mb-32">
-            <div className="h-[100svh] w-full container relative">
+        <div className="min-h-svh w-screen overflow-x-hidden mb-16 md:mb-32">
+            <div className="h-svh w-full container relative">
                 <Image
                     src={post.image}
                     alt={post.title}
                     width={1900}
                     height={1000}
-                    className="h-[100svh] object-cover"
+                    className="h-svh object-cover"
                 />
-                <div className="absolute inset-0 h-[100svh] bg-gradient-to-r from-background via-transparent to-background" />
-                <div className="absolute inset-0 h-[100svh] bg-gradient-to-b from-background to-transparent backdrop-blur-lg">
+                <div className="absolute inset-0 h-svh bg-linear-to-r from-background via-transparent to-background" />
+                <div className="absolute inset-0 h-svh bg-linear-to-b from-background to-transparent backdrop-blur-lg">
                     <div className="container h-full w-full max-w-4xl flex flex-col justify-end items-start py-16 text-primary">
                         <div className="mb-4 flex items-center justify-start">
                             <CgCalendarTwo className="h-5 w-5 text-muted-foreground" />

@@ -110,7 +110,7 @@ export default function Header() {
                 initial={{ x: "100%" }}
                 animate={{ x: isMenuOpen ? "0%" : "100%" }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="fixed top-0 right-0 h-screen w-full bg-background z-[60] p-8 shadow-lg lg:hidden"
+                className="fixed top-0 right-0 h-screen w-full bg-background z-60 p-8 shadow-lg lg:hidden"
             >
                 <div className="flex items-center justify-end">
                     <button

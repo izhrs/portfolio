@@ -88,7 +88,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         >
             <div className="relative w-full">
                 <motion.div
-                    className="flex w-full overflow-x-scroll scroll-smooth [scrollbar-width:none]"
+                    className="flex w-full overflow-x-scroll scroll-smooth scrollbar-none"
                     ref={carouselRef}
                     onScroll={checkScrollability}
                 >
@@ -159,7 +159,7 @@ export const Card = ({
                         <motion.div
                             ref={containerRef}
                             layoutId={layout ? `card-${card.title}` : undefined}
-                            className="max-w-5xl mx-auto bg-zinc-50 dark:bg-zinc-900 h-fit z-[60] my-10 p-4 md:p-10 rounded-3xl relative"
+                            className="max-w-5xl mx-auto bg-zinc-50 dark:bg-zinc-900 h-fit z-60 my-10 p-4 md:p-10 rounded-3xl relative"
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 50 }}
@@ -215,7 +215,7 @@ export const Card = ({
             <motion.button
                 layoutId={layout ? `card-${card.title}` : undefined}
                 onClick={handleOpen}
-                className="relative w-80 h-[26rem] md:w-[25rem] md:h-[36rem] rounded-xl bg-zinc-100 dark:bg-zinc-900 overflow-hidden flex items-center justify-center"
+                className="relative w-80 h-104 md:w-100 md:h-144 rounded-xl bg-zinc-100 dark:bg-zinc-900 overflow-hidden flex items-center justify-center"
             >
                 <Image
                     src={card.image}

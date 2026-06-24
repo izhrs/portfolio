@@ -6,7 +6,7 @@ export default function BlogLayout({
     children: React.ReactNode;
 }) {
     return (
-        <main className="min-h-[100svh]">
+        <main className="min-h-svh">
             {children}
             <div className="container mb-16 md:mb-32">
                 <div className="h-96 relative border">

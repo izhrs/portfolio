@@ -60,8 +60,8 @@ export default function Hero() {
     }, [scope.current]);
 
     return (
-        <section className="h-[100svh] w-full px-4 relative flex flex-col items-center justify-center overflow-hidden text-pur">
-            <div className="w-full absolute inset-0 h-[100svh]">
+        <section className="h-svh w-full px-4 relative flex flex-col items-center justify-center overflow-hidden text-pur">
+            <div className="w-full absolute inset-0 h-svh">
                 <SparklesCore
                     id="tsparticlesfullpage"
                     background="transparent"

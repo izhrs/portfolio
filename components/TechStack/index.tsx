@@ -70,7 +70,7 @@ export default function TechStackParallax() {
                 );
             })}
 
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-background via-transparent to-background"></div>
         </section>
     );
 }

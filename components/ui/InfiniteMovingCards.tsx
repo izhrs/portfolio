@@ -81,7 +81,7 @@ export const InfiniteMovingCards = ({
         <div
             ref={containerRef}
             className={cn(
-                "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+                "scroller relative z-20  max-w-7xl overflow-hidden  mask-[linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
                 className
             )}
         >
@@ -90,18 +90,18 @@ export const InfiniteMovingCards = ({
                 className={cn(
                     " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
                     start && "animate-scroll ",
-                    pauseOnHover && "hover:[animation-play-state:paused]"
+                    pauseOnHover && "hover:paused"
                 )}
             >
                 {items.map((item, idx) => (
                     <li
-                        className="w-[350px] h-[350px] md:h-[400px] md:w-[450px] max-w-full relative border flex-shrink-0 text-card-foreground bg-transparent backdrop-blur-sm px-8 py-6"
+                        className="w-[350px] h-[350px] md:h-[400px] md:w-[450px] max-w-full relative border shrink-0 text-card-foreground bg-transparent backdrop-blur-sm px-8 py-6"
                         key={item.name + idx}
                     >
                         <blockquote className="h-full">
                             <div
                                 aria-hidden="true"
-                                className="select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                                className="select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%+4px)] w-[calc(100%+4px)]"
                             ></div>
                             <div className="w-full h-full flex flex-col justify-between">
                                 <div className=" relative z-20 text-base leading-[1.6] font-normal text-foreground">
