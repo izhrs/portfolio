@@ -1,20 +1,26 @@
 "use client";
 
-import * as React from "react";
+import { useEffect, useState } from "react";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { useTheme } from "next-themes";
 
 export default function ThemeToggler() {
-    const { theme, setTheme } = useTheme();
-    const isDark = theme === "dark";
+    const { resolvedTheme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
 
-    const toggleTheme = () => {
-        setTheme(isDark ? "light" : "dark");
-    };
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) {
+        return null;
+    }
+
+    const isDark = resolvedTheme === "dark";
 
     return (
         <button
-            onClick={() => toggleTheme()}
+            onClick={() => setTheme(isDark ? "light" : "dark")}
             aria-label={
                 isDark ? "Switch to light theme" : "Switch to dark theme"
             }
