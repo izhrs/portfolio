@@ -8,6 +8,7 @@ import React, {
     useState,
     createContext,
     useContext,
+    ReactNode,
 } from "react";
 
 import { MdArrowOutward } from "react-icons/md";
@@ -17,7 +18,7 @@ import { useOutsideClick } from "@/hooks/useOutsideClick";
 import Link from "next/link";
 
 interface CarouselProps {
-    items: JSX.Element[];
+    items: ReactNode[];
     initialScroll?: number;
 }
 

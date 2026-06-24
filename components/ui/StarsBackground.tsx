@@ -34,7 +34,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     className,
 }) => {
     const [stars, setStars] = useState<StarProps[]>([]);
-    const canvasRef: RefObject<HTMLCanvasElement> =
+    const canvasRef: RefObject<HTMLCanvasElement | null> =
         useRef<HTMLCanvasElement>(null);
 
     const generateStars = useCallback(
@@ -62,7 +62,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
             twinkleProbability,
             minTwinkleSpeed,
             maxTwinkleSpeed,
-        ]
+        ],
     );
 
     useEffect(() => {
@@ -122,7 +122,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
                         0.5 +
                         Math.abs(
                             Math.sin((Date.now() * 0.001) / star.twinkleSpeed) *
-                                0.5
+                                0.5,
                         );
                 }
             });
