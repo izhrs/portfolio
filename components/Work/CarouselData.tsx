@@ -19,7 +19,7 @@ export function CarouselData({ projects }: { projects: project[] }) {
 
     return (
         <div className="w-full h-full">
-            <h2 className="container text-4xl md:text-5xl mb-10 font-bold text-purple-600 text-center">
+            <h2 className="container text-4xl md:text-5xl mb-10 font-bold text-accent text-center">
                 Dig into my universe
             </h2>
             <Carousel items={cards} />

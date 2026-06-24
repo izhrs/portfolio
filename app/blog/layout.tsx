@@ -31,7 +31,7 @@ export default function BlogLayout({
                                     type="email"
                                     placeholder="name@email.com"
                                     autoComplete="email"
-                                    className="w-full border px-3 py-2 bg-transparent text-primary focus:outline-none focus:border-purple-600 transition duration-300"
+                                    className="w-full border px-3 py-2 bg-transparent text-primary focus:outline-none focus:border-accent transition duration-300"
                                 />
                                 <button
                                     type="submit"

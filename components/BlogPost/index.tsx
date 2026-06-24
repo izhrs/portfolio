@@ -11,7 +11,7 @@ export default async function BlogPosts() {
     try {
         const response = await fetch(
             `${process.env.NEXT_PUBLIC_API_URL}/blog/posts/?page_size=3`,
-            { cache: "force-cache" }
+            { cache: "force-cache" },
         );
 
         if (!response.ok) {
@@ -30,7 +30,7 @@ export default async function BlogPosts() {
             <div className="w-full max-w-2xl mx-auto h-48 -mt-14 z-30">
                 <TextHoverEffect text="BLOG" />
             </div>
-            <h2 className="container text-4xl md:text-5xl mb-5 font-bold text-purple-600 text-center">
+            <h2 className="container text-4xl md:text-5xl mb-5 font-bold text-accent text-center">
                 Dive into my thoughts
             </h2>
             <p className="container text-muted-foreground text-sm md:text-base text-center mb-10">
@@ -38,10 +38,10 @@ export default async function BlogPosts() {
                 thoughts, and ideas.{" "}
                 <Link
                     href="/blog"
-                    className="text-transparent bg-clip-text bg-linear-to-r from-accent to-pink-500 group"
+                    className="text-transparent bg-clip-text bg-linear-to-r from-accent bg-destructive group"
                 >
                     Explore all posts
-                    <FaArrowRightLong className="inline-block ml-2 h-4 w-4 text-pink-500 group-hover:translate-x-2 transition duration-300" />
+                    <FaArrowRightLong className="inline-block ml-2 h-4 w-4 text-destructive group-hover:translate-x-2 transition duration-300" />
                 </Link>
             </p>
 

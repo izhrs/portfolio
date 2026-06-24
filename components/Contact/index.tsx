@@ -12,7 +12,7 @@ export default function Contact() {
             </div>
             <div className="container overflow-x-hidden w-full grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="flex flex-col items-start justify-center max-w-xl">
-                    <h2 className="text-4xl md:text-5xl font-bold text-purple-600">
+                    <h2 className="text-4xl md:text-5xl font-bold text-accent">
                         Let&apos;s chat. Tell me about your project.
                     </h2>
                     <p className="text-muted-foreground text-sm md:text-base mt-4 mb-10">

@@ -65,7 +65,7 @@ export default function ContactForm() {
                 <input
                     id="name"
                     type="text"
-                    className="w-full border px-3 py-2 bg-transparent text-primary focus:outline-none focus:border-purple-600 transition duration-300"
+                    className="w-full border px-3 py-2 bg-transparent text-primary focus:outline-none focus:border-accent transition duration-300"
                     {...register("name")}
                     disabled={isSubmitting}
                 />
@@ -83,7 +83,7 @@ export default function ContactForm() {
                 <input
                     id="email"
                     type="email"
-                    className="w-full border px-3 py-2 bg-transparent text-primary focus:outline-none focus:border-purple-600 transition duration-300"
+                    className="w-full border px-3 py-2 bg-transparent text-primary focus:outline-none focus:border-accent transition duration-300"
                     {...register("email")}
                     disabled={isSubmitting}
                 />
@@ -100,7 +100,7 @@ export default function ContactForm() {
                 </label>
                 <textarea
                     id="message"
-                    className="w-full border px-3 py-2 bg-transparent text-primary focus:outline-none focus:border-purple-600 transition duration-300"
+                    className="w-full border px-3 py-2 bg-transparent text-primary focus:outline-none focus:border-accent transition duration-300"
                     {...register("message")}
                     disabled={isSubmitting}
                 />

@@ -29,7 +29,7 @@ export default function TestimonialsClient({
             <div className="pt-16 md:pt-32">
                 <div className="w-full max-w-2xl mx-auto h-48 -mt-14 z-40" />
             </div>
-            <h2 className="container text-4xl md:text-5xl font-bold text-purple-600 text-center mb-4">
+            <h2 className="container text-4xl md:text-5xl font-bold text-accent text-center mb-4">
                 Trusted by the kindest customers
             </h2>
             <p className="text-muted-foreground text-sm md:text-base text-center mb-10">

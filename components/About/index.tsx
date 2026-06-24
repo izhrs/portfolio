@@ -20,7 +20,7 @@ export default function About() {
                     alt="about"
                     className="object-cover h-[500px] lg:h-screen w-full"
                 />
-                <div className="absolute inset-0 h-full w-full bg-purple-600/10 z-20" />
+                <div className="absolute inset-0 h-full w-full bg-accent/10 z-20" />
             </div>
             <div className="flex flex-col items-start justify-center p-5 py-20 lg:p-20">
                 <div className="w-full h-48 -mt-14">

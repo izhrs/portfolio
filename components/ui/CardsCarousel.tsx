@@ -185,7 +185,7 @@ export const Card = ({
                                     {card.source_code_url !== "" && (
                                         <Link
                                             href={card.source_code_url}
-                                            className="py-2 text-base text-purple-600 uppercase flex items-center gap-2"
+                                            className="py-2 text-base text-accent uppercase flex items-center gap-2"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -197,7 +197,7 @@ export const Card = ({
                                     {card.site_url !== "" && (
                                         <Link
                                             href={card.site_url}
-                                            className="py-2 text-base text-purple-600 uppercase flex items-center gap-2"
+                                            className="py-2 text-base text-accent uppercase flex items-center gap-2"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >

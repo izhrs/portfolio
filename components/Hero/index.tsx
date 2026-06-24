@@ -1,6 +1,8 @@
 "use client";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
+
+import { useTheme } from "next-themes";
 
 import { useAnimate, stagger } from "framer-motion";
 
@@ -22,12 +24,12 @@ export default function Hero() {
         {
             text: "digital",
             className:
-                "text-5xl md:text-6xl lg:text-7xl font-bold text-purple-600 z-20",
+                "text-5xl md:text-6xl lg:text-7xl font-bold text-accent z-20",
         },
         {
             text: "experiences",
             className:
-                "text-5xl md:text-6xl lg:text-7xl font-bold text-purple-600 z-20",
+                "text-5xl md:text-6xl lg:text-7xl font-bold text-accent z-20",
         },
         {
             text: "that",
@@ -52,12 +54,14 @@ export default function Hero() {
                 {
                     duration: 1,
                     delay: stagger(0.5),
-                }
+                },
             );
         }, 2 * 1000);
 
         return () => clearTimeout(timeout);
     }, [scope.current]);
+
+    const { resolvedTheme } = useTheme();
 
     return (
         <section className="h-svh w-full px-4 relative flex flex-col items-center justify-center overflow-hidden text-pur">
@@ -69,7 +73,10 @@ export default function Hero() {
                     maxSize={1.8}
                     particleDensity={50}
                     className="w-full h-full"
-                    particleColor="#9333ea"
+                    // mocha lavender for dark and latte for light
+                    particleColor={
+                        resolvedTheme == "dark" ? "#b4befe" : "#7287fd"
+                    }
                 />
             </div>
             <div className="text-center relative z-20 flex flex-col items-center justify-center select-none">
