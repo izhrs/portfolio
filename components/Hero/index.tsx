@@ -53,10 +53,10 @@ export default function Hero() {
                 },
                 {
                     duration: 1,
-                    delay: stagger(0.5),
+                    delay: stagger(0.4),
                 },
             );
-        }, 2 * 1000);
+        }, 1200);
 
         return () => clearTimeout(timeout);
     }, [scope.current]);
